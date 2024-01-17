@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
+using MiniShop.Data.Config;
 using MiniShop.Entity;
 
 namespace MiniShop.Data
@@ -16,6 +17,14 @@ namespace MiniShop.Data
             base.OnConfiguring(optionsBuilder);
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new CategoryConfig());
+            modelBuilder.ApplyConfiguration(new ProductConfig());
+            modelBuilder.ApplyConfiguration(new CategoryProductConfig()); 
+           
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
 
