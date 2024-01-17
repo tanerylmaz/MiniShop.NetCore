@@ -7,22 +7,30 @@ namespace MiniShop.Data
 {
 	public class AppDbContext : DbContext
 	{
+        public AppDbContext(DbContextOptions options) :base(options)
+        {
+
+        }
 		public DbSet<Product> Products { get; set; }
 		public DbSet<Category> Categories { get; set; }
 		public DbSet<CategoryProduct> CategoryProducts { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            //sql server baglantı cümlesi nuget managerdan sql kaldırıldı.
 
-            //optionsBuilder.UseSqlServer(@"Server=localhost;Database=MiniShopDb;
-            //User Id=SA;Password=reallyStrongPwd123;TrustServerCertificate=true");
-            //base.OnConfiguring(optionsBuilder);
+        // PROGRAM.CS de appdbcontext i service lere eklediğimiz için onconfiguring i ovverride etmeye gerek kalmadı.
 
 
-            optionsBuilder.UseSqlite("Data Source=MiniShop.sqlite");
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    //sql server baglantı cümlesi nuget managerdan sql kaldırıldı.
 
-            base.OnConfiguring(optionsBuilder);
-        }
+        //    //optionsBuilder.UseSqlServer(@"Server=localhost;Database=MiniShopDb;
+        //    //User Id=SA;Password=reallyStrongPwd123;TrustServerCertificate=true");
+        //    //base.OnConfiguring(optionsBuilder);
+
+
+        //    optionsBuilder.UseSqlite("Data Source=MiniShop.sqlite");
+
+        //    base.OnConfiguring(optionsBuilder);
+        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

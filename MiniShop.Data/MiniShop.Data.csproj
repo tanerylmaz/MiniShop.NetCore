@@ -18,8 +18,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Config\" />
+    <None Remove="Abstract\" />
+    <None Remove="Concrete\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Config\" />
+    <Folder Include="Abstract\" />
+    <Folder Include="Concrete\" />
   </ItemGroup>
 </Project>
