@@ -1,0 +1,301 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Mvc/MiniShop.Mvc.csproj": {}
+  },
+  "projects": {
+    "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Business/MiniShop.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Business/MiniShop.Business.csproj",
+        "projectName": "MiniShop.Business",
+        "projectPath": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Business/MiniShop.Business.csproj",
+        "packagesPath": "/Users/taneryilmaz/.nuget/packages/",
+        "outputPath": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Business/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/taneryilmaz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Core/MiniShop.Core.csproj": {
+                "projectPath": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Core/MiniShop.Core.csproj"
+              },
+              "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Data/MiniShop.Data.csproj": {
+                "projectPath": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Data/MiniShop.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.312/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Core/MiniShop.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Core/MiniShop.Core.csproj",
+        "projectName": "MiniShop.Core",
+        "projectPath": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Core/MiniShop.Core.csproj",
+        "packagesPath": "/Users/taneryilmaz/.nuget/packages/",
+        "outputPath": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/taneryilmaz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.312/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Data/MiniShop.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Data/MiniShop.Data.csproj",
+        "projectName": "MiniShop.Data",
+        "projectPath": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Data/MiniShop.Data.csproj",
+        "packagesPath": "/Users/taneryilmaz/.nuget/packages/",
+        "outputPath": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/taneryilmaz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Entity/MiniShop.Entity.csproj": {
+                "projectPath": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Entity/MiniShop.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.312/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Entity/MiniShop.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Entity/MiniShop.Entity.csproj",
+        "projectName": "MiniShop.Entity",
+        "projectPath": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Entity/MiniShop.Entity.csproj",
+        "packagesPath": "/Users/taneryilmaz/.nuget/packages/",
+        "outputPath": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Entity/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/taneryilmaz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.312/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Mvc/MiniShop.Mvc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Mvc/MiniShop.Mvc.csproj",
+        "projectName": "MiniShop.Mvc",
+        "projectPath": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Mvc/MiniShop.Mvc.csproj",
+        "packagesPath": "/Users/taneryilmaz/.nuget/packages/",
+        "outputPath": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Mvc/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/taneryilmaz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.312/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Business/MiniShop.Business.csproj": {
+                "projectPath": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Business/MiniShop.Business.csproj"
+              },
+              "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Core/MiniShop.Core.csproj": {
+                "projectPath": "/Users/taneryilmaz/Documents/GitHub/MiniShop/MiniShop.Core/MiniShop.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.312/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
