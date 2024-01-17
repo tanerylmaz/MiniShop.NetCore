@@ -12,8 +12,15 @@ namespace MiniShop.Data
 		public DbSet<CategoryProduct> CategoryProducts { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=localhost;Database=MiniShopDb;
-            User Id=SA;Password=reallyStrongPwd123;TrustServerCertificate=true");
+            //sql server baglantı cümlesi nuget managerdan sql kaldırıldı.
+
+            //optionsBuilder.UseSqlServer(@"Server=localhost;Database=MiniShopDb;
+            //User Id=SA;Password=reallyStrongPwd123;TrustServerCertificate=true");
+            //base.OnConfiguring(optionsBuilder);
+
+
+            optionsBuilder.UseSqlite("Data Source=MiniShop.sqlite");
+
             base.OnConfiguring(optionsBuilder);
         }
 
