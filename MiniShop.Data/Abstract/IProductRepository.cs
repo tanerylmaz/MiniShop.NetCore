@@ -8,6 +8,8 @@ namespace MiniShop.Data.Abstract
 		//temel crud metotları miras aldı producta özgü metot imzaları yazılacak sadece
 
 		List<Product> GetProductsByCategoryId(int categoryId);
+		List<Product> GetHomePageProducts(bool? isHome);
+
 	}
 }
 

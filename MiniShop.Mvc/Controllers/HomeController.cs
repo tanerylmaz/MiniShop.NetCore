@@ -1,7 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using MiniShop.Business.Abstract;
-using MiniShop.Mvc.Models;
 
 namespace MiniShop.Mvc.Controllers;
 

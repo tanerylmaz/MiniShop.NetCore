@@ -22,25 +22,43 @@ namespace MiniShop.Business.Concrete
 
         public List<ProductViewModel> GetAll(bool? isHome=null, bool? isActive=null, bool? isDelete=null)
         {
-            var products = _productRepository.GetAll();
-            List<ProductViewModel> productViewModels = new List<ProductViewModel>();
-            ProductViewModel productViewModel;
-            foreach (var p in products)
+            List<Product> products;
+            if (isHome==null)
             {
-                if (p.IsHome==isHome)
-                {
-                    productViewModel = new ProductViewModel
-                    {
-                        Id = p.Id,
-                        Name = p.Name,
-                        Price = p.Price,
-                        ImageUrl = p.ImageUrl,
-                        Properties = p.Properties,
-                        Url = p.Url
-                    };
-                    productViewModels.Add(productViewModel);
-                }
+                products = _productRepository.GetAll();
             }
+           
+            else
+            {
+                products = _productRepository.GetHomePageProducts(isHome);
+
+            }
+            //List<ProductViewModel> productViewModels = new List<ProductViewModel>();
+            //ProductViewModel productViewModel;
+            //foreach (var p in products)
+            //{
+            //        productViewModel = new ProductViewModel
+            //        {
+            //            Id = p.Id,
+            //            Name = p.Name,
+            //            Price = p.Price,
+            //            ImageUrl = p.ImageUrl,
+            //            Properties = p.Properties,
+            //            Url = p.Url
+            //        };
+            //        productViewModels.Add(productViewModel);
+            //}
+
+            List<ProductViewModel> productViewModels = products.Select(p => new ProductViewModel
+            {
+                Id = p.Id,
+                Name = p.Name,
+                ImageUrl=p.ImageUrl,
+                Price=p.Price,
+                Properties=p.Properties,
+                Url=p.Url
+
+            }).ToList(); ;
             return productViewModels;
         }
 
