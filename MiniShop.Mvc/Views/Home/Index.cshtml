@@ -14,7 +14,12 @@
                             <h5 class="card-title">@p.Name</h5>
                             <p class="card-text">@p.Properties</p>
                             <p class="card-text">@p.Price</p>
-                            <a class="btn btn-primary" href="#">Detay</a>
+                            <a
+                               asp-area=""
+                               asp-controller="Home"
+                               asp-action="GetById"
+                               asp-route-id="@p.Id"
+                               class="btn btn-primary">Detay</a>
                         </div>
                     </div>
                 </div>

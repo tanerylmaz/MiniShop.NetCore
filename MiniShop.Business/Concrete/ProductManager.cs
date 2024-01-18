@@ -64,7 +64,17 @@ namespace MiniShop.Business.Concrete
 
         public ProductViewModel GetById(int id)
         {
-            throw new NotImplementedException();
+            Product product = _productRepository.GetById(id);
+            ProductViewModel productViewModel = new ProductViewModel
+            {
+                Id = product.Id,
+                Name = product.Name,
+                ImageUrl = product.ImageUrl,
+                Price = product.Price,
+                Properties = product.Properties,
+                Url = product.Url
+            };
+            return productViewModel;
         }
 
         public void HardDelete(int id)

@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using MiniShop.Business.Abstract;
+using MiniShop.Core.ViewModels;
 
 namespace MiniShop.Mvc.Controllers;
 
@@ -19,5 +20,10 @@ public class HomeController : Controller
         return View(products);
     }
 
+    public IActionResult GetById(int id)
+    {
+        ProductViewModel product = _productManager.GetById(id);
+        return View(product); 
+    }
 }
 

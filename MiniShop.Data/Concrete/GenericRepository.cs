@@ -27,7 +27,8 @@ namespace MiniShop.Data.Concrete
 
         public TEntity GetById(int id)
         {
-            throw new NotImplementedException();
+            TEntity entity = _dbContext.Set<TEntity>().Find(id);
+            return entity;
         }
 
         public void HardDelete(TEntity entity)
