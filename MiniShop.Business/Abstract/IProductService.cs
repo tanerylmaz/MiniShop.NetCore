@@ -7,7 +7,7 @@ namespace MiniShop.Business.Abstract
 	{
 		//CRUD işlemleri için metot imzaları
 
-		List<ProductViewModel> GetAll(bool? isHome, bool? isActive, bool? isDelete);
+		List<ProductViewModel> GetAll(bool? isHome=null, bool? isActive=null, bool? isDelete=null);
 		ProductViewModel GetById(int id);
 		void Create(ProductViewModel model);
 		void Update(ProductViewModel model);

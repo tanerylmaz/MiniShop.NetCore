@@ -7,7 +7,7 @@ namespace MiniShop.Data.Concrete
     
     public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {
-        private readonly DbContext _dbContext;
+        protected readonly DbContext _dbContext;
 
         public GenericRepository(DbContext dbContext)
         {
