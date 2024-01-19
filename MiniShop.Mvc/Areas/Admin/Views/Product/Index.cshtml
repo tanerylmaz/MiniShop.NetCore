@@ -1,12 +1,7 @@
 ﻿@model List<ProductViewModel>
 
-@section Styles{<link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />}
-@section Scripts{<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
-            <script>
-                $(document).ready(function () {
-                    $('#entityTable').DataTable();
-                });
-            </script>
+@section Styles{@await Html.PartialAsync("_DatatablesCssPartial")}
+@section Scripts{ @await Html.PartialAsync("_DataTablesJsPartial")
              }
 
 <div class="container">
