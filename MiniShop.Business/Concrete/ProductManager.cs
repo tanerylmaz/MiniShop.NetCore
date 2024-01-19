@@ -91,7 +91,8 @@ namespace MiniShop.Business.Concrete
 
         public void HardDelete(int id)
         {
-            throw new NotImplementedException();
+            Product deleteProduct = _productRepository.GetById(id);
+            _productRepository.HardDelete(deleteProduct);
         }
 
         public void SoftDelete(int id)
@@ -101,7 +102,16 @@ namespace MiniShop.Business.Concrete
 
         public void Update(ProductViewModel model)
         {
-            throw new NotImplementedException();
+            Product editedProduct = _productRepository.GetById(model.Id);
+            editedProduct.Name = model.Name;
+            editedProduct.Price = model.Price;
+            editedProduct.Url = model.Url;
+            editedProduct.ImageUrl = model.ImageUrl;
+            editedProduct.Properties = model.Properties;
+            editedProduct.IsHome = model.IsHome;
+
+            _productRepository.Update(editedProduct);
+
         }
     }
 }

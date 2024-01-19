@@ -20,7 +20,7 @@ namespace MiniShop.Mvc.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            var products = _productManager.GetAll();
+            var products = _productManager.GetAll(null, null, false);
             return View(products);
         }
         public IActionResult Create()
@@ -32,6 +32,32 @@ namespace MiniShop.Mvc.Areas.Admin.Controllers
         public IActionResult Create(ProductViewModel productViewModel)
         {
             _productManager.Create(productViewModel);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Edit(int id)
+        {
+            ProductViewModel editedProduct = _productManager.GetById(id);
+            return View(editedProduct);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(ProductViewModel editedProduct)
+        {
+            _productManager.Update(editedProduct);
+            return RedirectToAction("Index");
+
+        }
+
+        public IActionResult Delete(int id)
+        {
+            ProductViewModel deletedProduct = _productManager.GetById(id);
+            return View(deletedProduct);
+        }
+
+        public IActionResult HardDelete(int id)
+        {
+            _productManager.HardDelete(id);
             return RedirectToAction("Index");
         }
     }

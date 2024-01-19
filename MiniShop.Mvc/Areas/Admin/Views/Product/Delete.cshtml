@@ -1,0 +1,24 @@
+﻿@model ProductViewModel
+
+<div class="card mb-3 w-50 m-auto">
+    <div class="row no-gutters">
+        <div class="col-md-4 py-2 ps-2">
+            <img src="~/images/@Model.ImageUrl" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">@Model.Name</h5>
+                <p class="card-text">@Model.Properties</p>
+                <p class="card-text"><small class="text-muted"> @Model.Price</small></p>
+            </div>
+            <div class=" mt-5 p-2">
+                <a
+                   asp-area="Admin"
+                   asp-controller="Product"
+                   asp-action="HardDelete"
+                   asp-route-id="@Model.Id"
+                   class="btn btn-danger">KALICI OLARAK SİL</a>
+            </div>
+        </div>
+    </div>
+</div>
