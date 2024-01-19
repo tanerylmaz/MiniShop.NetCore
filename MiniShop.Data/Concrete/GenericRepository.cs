@@ -16,7 +16,8 @@ namespace MiniShop.Data.Concrete
 
         public void Create(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Set<TEntity>().Add(entity);
+            _dbContext.SaveChanges();
         }
 
         public List<TEntity> GetAll()

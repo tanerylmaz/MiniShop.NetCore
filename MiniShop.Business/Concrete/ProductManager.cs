@@ -17,7 +17,19 @@ namespace MiniShop.Business.Concrete
 
         public void Create(ProductViewModel model)
         {
-            throw new NotImplementedException();
+            var product = new Product
+            {
+                Name=model.Name,
+                Price=model.Price,
+                Properties=model.Properties,
+                Url=model.Url,
+                ImageUrl=model.ImageUrl,
+                CreatedDate=DateTime.Now,
+                ModifiedDate=DateTime.Now,
+                IsActive=true,
+                IsHome=model.IsHome
+            };
+            _productRepository.Create(product);
         }
 
         public List<ProductViewModel> GetAll(bool? isHome=null, bool? isActive=null, bool? isDelete=null)
