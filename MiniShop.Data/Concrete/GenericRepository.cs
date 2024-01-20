@@ -40,7 +40,10 @@ namespace MiniShop.Data.Concrete
 
         public void SoftDelete(TEntity entity)
         {
-            throw new NotImplementedException();
+            // Update(entity);
+
+            _dbContext.Set<TEntity>().Update(entity);
+            _dbContext.SaveChanges();
         }
 
         public void Update(TEntity entity)

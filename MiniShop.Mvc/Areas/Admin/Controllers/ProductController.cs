@@ -60,6 +60,11 @@ namespace MiniShop.Mvc.Areas.Admin.Controllers
             _productManager.HardDelete(id);
             return RedirectToAction("Index");
         }
+        public IActionResult SoftDelete(int id)
+        {
+            _productManager.SoftDelete(id);
+            return RedirectToAction("Index");
+        }
     }
 }
 

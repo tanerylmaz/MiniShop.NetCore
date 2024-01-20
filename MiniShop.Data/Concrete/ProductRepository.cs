@@ -17,6 +17,12 @@ namespace MiniShop.Data.Concrete
                 }
         }
 
+        public List<Product> GetDeletedProducts(bool? isDeleted)
+        {
+            var products = AppContext.Products.Where(p => p.IsDelete == isDeleted).ToList();
+            return products;
+        }
+
         public List<Product> GetHomePageProducts(bool? isHome)
         {
             var products = AppContext.Products.Where(p => p.IsHome == isHome && p.IsActive && !p.IsDelete).ToList();

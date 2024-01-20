@@ -9,7 +9,8 @@ namespace MiniShop.Data.Abstract
 
 		List<Product> GetProductsByCategoryId(int categoryId);
 		List<Product> GetHomePageProducts(bool? isHome);
+		List<Product> GetDeletedProducts(bool? isDeleted);
 
-	}
+    }
 }
 
